@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<link rel="stylesheet" type="text/css" href="/css/old_style.6.css">
+<title>metjm.net - CSGO Skin Screenshot</title>
+<meta name="description" content="CSGO Skin Screenshot lets you inspect csgo skins without starting the game.">
+<meta name="keywords" content="csgo,skin,screenshot,inspect,Counter-Strike,Global Offensive,game,service">
+<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+<style type="text/css">
+			.donator {
+				display: block;
+				width: 100%;
+				margin-bottom: 5px;
+				padding: 0px;
+				overflow: auto;
+			}
+			.donator > .name {
+				color:black;
+				float: left;
+				width:260px;
+				height:1.4em;
+				overflow:hidden;
+			}
+			.donator > .amount {
+				float: right;
+				text-align: right;
+				color:#ad1d41;
+			}
+			.backgroundImageContainer{
+				
+				background-image: url(/img/backgrounds/background_nuke.jpg);
+			}
+			
+			#serverStatusMain{
+				height:50px;
+				width:90%;
+				margin-left:5%;
+				margin-top:5px;
+				border-top:1px solid #e5e5e5;
+				position:relative;
+			}
+			#serverStatusMain .statusElementDesc{
+				position:absolute;
+				height:100%;
+				line-height:50px;
+				margin:0px;
+				padding:0px;
+				top:0px;
+				width: 190px;
+				color:white;
+				text-align:right;
+				padding-right: 21px;
+				background-position: center left;
+				background-repeat:no-repeat;
+			}
+			#serverStatusMain > .statusElement{
+				position:absolute;
+				height:35px;
+				line-height:35px;
+				margin:0px;
+				padding:0px;
+				top:0px;
+				width: 50px;
+				color:black;
+				text-align:center;
+				font-size: 30px;
+				font-family: NexaBold;
+			}
+			#serverStatusMain > .statusElementDescSmall{
+				color:black;
+				font-size:12px;
+				height:15px;
+				line-height:15px;
+				top:35px;
+			}
+			
+			#serverStatusMain > #forceReloadButton{
+				position:absolute;
+				width:50px;
+				height:50px;
+				right:0px;
+				top:0px;
+				background-image:url(img/refresh_all.png);
+				background-position:center;
+				background-repeat:no-repeat;
+			}
+			#serverStatusMain > #forceReloadButton:hover{
+				background-size: 110%;
+			}
+			
+			#serverStatusMain > #trashAllButton{
+				position:absolute;
+				width:50px;
+				height:50px;
+				right:60px;
+				top:0px;
+				background-image:url(img/trash_all.png);
+				background-position:center;
+				background-repeat:no-repeat;
+			}
+			#serverStatusMain > #trashAllButton:hover{
+				background-size: 110%;
+			}
+			
+			.checkboxSmall{
+				width: 130px;
+			}
+			.checkboxSmaller{
+				width:35px;
+			}
+			#requestHqCheckbox{
+				left: 220px;
+			}
+			#displayCustomLogoCheckbox{
+				left: 65px;
+			}
+			#useOpskinBackground{
+				width: 45px;
+				background-position:center;
+			}
+			
+		</style>
+<script type="text/javascript" src="/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="/jquery.cookiesdirective.js"></script>
+<script type="text/javascript">
+				$(document).ready(function(){
+				});
+			</script>
+<script type="text/javascript">
+				!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-61102913-5","auto"),ga("send","pageview");
+			</script>
+</head>
+<body>
+
+<div class='backgroundImageContainer'></div>
+<div class="centerContainer">
+<div class='backgroundWhite'></div>
+<div class="header">
+<div class="headerInner">
+<a href='../'>
+<div class='logoContainer'></div>
+</a>
+<div class='headerStatusContainer'>
+<div style='position:relative;width:100%;height:100%;'>
+<p class='headerStatusCount'>
+66710 </p>
+<p class='headerStatusText'>
+SCREENSHOTS<br>
+<span>TAKEN TODAY</span>
+</p>
+</div>
+</div>
+<div class='headerUserContainer'>
+<a href="https://steamcommunity.com/openid/login?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.mode=checkid_setup&amp;openid.return_to=https%3A%2F%2Fmetjm.net%2Fcsgo%2F&amp;openid.realm=https%3A%2F%2Fmetjm.net&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select">
+<img alt='login with steam' src='/img/shared/sits_02.png' class='loginWithSteamButton'>
+</a>
+</div>
+</div>
+</div>
+<div class="navBar">
+<a href="/csgo"><div>Screenshot</div></a>
+<div class='dropdownContainer'>
+<div>
+<a href="/tools"><div>Tools</div></a>
+<a href="/fades"><div>Fades</div></a>
+<a href="/steamwizard"><div>SteamWizard</div></a>
+</div>
+</div>
+<a href="/help"><div>Help</div></a>
+<a href="/stats"><div>Stats</div></a>
+<a href="/feedback"><div>Feedback</div></a>
+<a href="/premium"><div>Premium</div></a>
+</div>
+<div class="contentContainer">
+<div class='appDescriptionContainer'>
+<div class='appDescriptionInner' style='width:100%;'>
+<p class="appDescription">
+<span class='bold'>CSGO Skin Screenshot</span> will take screenshots of CS:GO skins<br>
+so you can inspect them without starting the game.
+</p>
+</div>
+</div>
+<div class='inspectLinkContainer' style='font-familiy:Helvetica;'>
+<input class='inspectLinkInput bold' placeholder='Paste inspect link here...'>
+<div class='requestInspectLinkButton bold'>SCREEN IT!</div>
+</div>
+
+<div id='customOptionsContainer'>
+<div id='customOptionsInner' class='hideThisShit'>
+<div id="useOpskinBackground" style="width:40px;" class='customcheckbox checkboxSmall' data-bg='#e9e9e9' data-bi='url(/csgo/img/opskins.png)' data-bgc='#47b4dc' data-bic='url(/csgo/img/opskins_inv.png)'>
+</div>
+<div id="displayCustomLogoCheckbox" class='customcheckbox checkboxSmall' data-bg='#e9e9e9' data-bi='url(/csgo/img/icon_brush.png)' data-bgc='#47b4dc' data-bic='url(/csgo/img/icon_brush_white.png)'>
+Custom Logo
+</div>
+<div id="requestHqCheckbox" class='customcheckbox checkboxSmall' data-bg='#e9e9e9' data-bi='url(/csgo/img/icon_hq.png)' data-bgc='#47b4dc' data-bic='url(/csgo/img/icon_hq_white.png)'>
+HQ Screen
+</div>
+<select id="resSelection" size="1">
+</select>
+<div id="customRotCheckbox" class='customcheckbox' data-bg='#e9e9e9' data-bi='url(/csgo/img/icon_hq.png)' data-bgc='#47b4dc' data-bic='url(/csgo/img/icon_hq_white.png)'>
+Custom Rotation
+</div>
+<select id="resSelectionRotations" size="1" disabled='disabled'>
+</select>
+<div id='addCustomRotationbutton'>
+Add
+</div>
+</div>
+<div id='customOptionsNoPremium'>
+Need HQ screens, priority queue and more? Get premium at only $4 per month
+</div>
+</div>
+
+<div id='skinList'>
+</div>
+<div id='serverStatusMain'>
+<p class='statusElementDesc' style='left:0px;background-image:url(img/servers_background.png);'>CSGO Instances</p>
+<p class='statusElementDesc' style='left: 300px;background-image:url(img/queue_background.png);'>Queue Length</p>
+<p class='statusElement' style='left: 225px;color:#2086ba;height:50px;line-height:50px;'><span id='serversOnlineSpan'>0</span></p>
+<p class='statusElement' style='left: 530px;color:#ba415f;'><span id='queueLengthSpan'></span></p>
+<p class='statusElement statusElementDescSmall' style='left: 530px;'>Free</p>
+<p class='statusElement' style='left: 600px;color:#ba415f;'><span id='queueLengthSpanPremium'></span></p>
+<p class='statusElement statusElementDescSmall' style='left: 600px;'>Premium</p>
+<div id="forceReloadButton" class="clickable">
+</div>
+<div id="trashAllButton" class="clickable">
+</div>
+</div>
+<a href='../recent'>
+<div class='recentScreensContainer'>
+<p>RECENT SCREENSHOTS</p>
+<div style='background-image:url(//s.metjm.net/BOInNK5_t.jpg);'></div><div style='background-image:url(//s.metjm.net/LMtt0hJ_t.jpg);'></div><div style='background-image:url(//s.metjm.net/rmColbZ_t.jpg);'></div>
+</div>
+</a>
+<div id='bannerContainer'>
+<div id="fadesBanner">
+<a href='../fades/'><div id='fadesBannerLink'></div></a>
+</div>
+<a href='../donations'>
+<div id='donationList'>
+<p style='text-align:center;'>Top Supporters last 30 Days</p>
+</div>
+</a>
+<a href='../android'><div id="appBanner"></div></a>
+</div>
+
+<div id="hiddenshit" style="position:fixed;left:9000;top:9000;z-position:-1000;width:0px;height:0xp;overflow:hidden;">
+<div class='skinContainer'>
+<p class='skinProperty' style='left:200px;'>
+STATUS<br>
+<span id='skinStatusSpan'></span>
+<p>
+<p class='skinProperty' style='left:300px;'>
+PATTERN INDEX<br>
+<span id='patternIndexS'></span>
+<p>
+<p class='skinProperty' style='left:440px;'>
+FLOAT<br>
+<span id='floatValueS'></span>
+<p>
+<div class='clickable' id='trashButton'>
+</div>
+<div class='clickable' id='retryButton'>
+</div>
+<div class='openImageButton'>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="js/error_reporter.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script src="js/jquery.cookiesdirective.js"></script>
+<script type="text/javascript" src="js/index.18.js"></script>
+</div>
+<div class="premiumFooter">
+</div>
+<div class="footer">
+<p style='text-align:left;left:0px;'>© 2016 - 2017 metjm.net</p>
+<a href="https://twitter.com/metjmnet" target="_blank"><img src="../img/Twitter_Logo_Blue.svg" style="position:absolute;width:45px;height:45px;left:calc(50% - 22px);"></a>
+<p style='text-align:right;left:15%;right:53%;'>
+<a href='../feedback'>FEEDBACK</a>
+|
+<a href='../help'>HELP</a>
+</p>
+<p style='text-align:left;left:53%;right:15%;'>
+<a href='../stats'>STATS</a>
+|
+<a href='../impressum'>IMPRESSUM</a>
+</p>
+<p style='text-align:right;right:0px;'><a target="_blank" href='http://steampowered.com/'>Powered by Steam</a></p>
+</div>
+<script type="text/javascript">
+				$.cookiesDirective({
+					explicitConsent: false,
+					position: 'bottom',
+					message: 'This website uses cookies. (<a style="color: #888;" href="/fk_u_eu.html" target="_blank">Policy</a>)'
+				});
+										var openedAd = false;
+						// $("body").click(function(e){
+							// if (!openedAd && window.location.href.indexOf("database") < 0){
+								// var width = $(window).width();
+								// var h = width/2;
+								// if (e.pageX < h-500 || e.pageX > h+500){	
+									// window.open("http://fanobet.com");
+									// openedAd = true;
+								// }
+							// }
+						// });
+									</script>
+</div>
+</body>
+</html>
+
