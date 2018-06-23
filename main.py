@@ -17,9 +17,10 @@ def hello(id=id):
     # print json.dumps(bgm_json, sort_keys=True, indent=4)
     with open("./test.json",'w') as json_file:
          json.dump(bgm_json,json_file,ensure_ascii=True)
-    # bgm_date = []
-    # for ep in bgm_json['eps']:
-    #     bgm_date.append(ep['airdate'])
+    ep_date_list = []
+    for ep in bgm_json['eps']:
+        ep_date_list.append(ep['airdate'])
+    print ep_date_list
     return render_template('bgm.html', name=bgm_json['name'])
 
 if __name__ == '__main__':
