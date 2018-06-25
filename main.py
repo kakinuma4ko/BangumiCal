@@ -28,7 +28,7 @@ def download_file(id):
     # directory = os.getcwd() 
     file_name = 'kakinuma_test.ics'
     response = make_response(send_from_directory('./', file_name, as_attachment=True))
-    response.headers["Content-Disposition"] = "attachment; filename={}".format(file_name.encode().decode('latin-1'))
+    # response.headers["Content-Disposition"] = "attachment; filename={}".format(file_name.encode().decode('latin-1'))
     print 1
     return response
 
